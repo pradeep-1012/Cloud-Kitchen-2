@@ -1,0 +1,14 @@
+{% extends "home.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+  <style type="text/css">
+    .important { color: #33cabb; }
+  </style>
+{% endblock %}
+{% block content %}
+<div align="center" >
+  <h1>CLOUD KITCHEN</h1>
+  <img src={{url_for('static',filename='images/kitchen.jpg')}} >
+</div>
+    {% endblock %}
